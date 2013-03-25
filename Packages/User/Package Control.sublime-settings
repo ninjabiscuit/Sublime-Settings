@@ -1,18 +1,26 @@
 {
-	"auto_upgrade_last_run": 1347874786,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"Can I Use",
 		"Capybara Snippets",
+		"CoffeeScript",
 		"CSS Snippets",
+		"EJS",
 		"ERB Insert and Toggle Commands",
 		"jQuery",
 		"Package Control",
 		"Rails Related Files",
 		"RubyTest",
+		"Sass",
 		"ScopeHunter",
+		"SideBarEnhancements",
 		"Simple Rails Navigator",
+		"Stylus",
 		"SublimeCodeIntel",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Theme - Soda",
+		"Tomorrow Color Schemes"
 	]
 }

@@ -1,4 +1,17 @@
 {
   // If true, when the file is saved any errors will appear in a popup list
-  "sublimelinter_popup_errors_on_save": true
+  "sublimelinter_popup_errors_on_save": true,
+
+  "javascript_linter" : "jshint",
+
+  "jshint_options" :
+  {
+    "predef":   [
+      "$",
+      "jQuery",
+      "console",
+      "Modernizr"
+    ],
+    "trailing": false
+  }
 }

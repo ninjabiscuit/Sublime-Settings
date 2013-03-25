@@ -1,11 +1,44 @@
 {
 	"color_scheme": "Packages/User/idleFingers.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.tmTheme.cache",
+		"*.tmPreferences.cache",
+		"*.tmLanguage.cache",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"node_modules/*",
+		"public_build/*"
+	],
+	"font_face": "Monaco",
 	"font_size": 12.0,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

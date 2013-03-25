@@ -203,7 +203,8 @@ class BaseLinter(object):
                                        stdout=subprocess.PIPE,
                                        stderr=subprocess.STDOUT,
                                        startupinfo=self.get_startupinfo())
-            result = process.communicate(code)[0]
+            process.stdin.write(code)
+            result = process.communicate()[0]
         finally:
             if tempfilePath:
                 os.remove(tempfilePath)
@@ -299,7 +300,7 @@ class BaseLinter(object):
             lang = self.language.lower()
 
             if lang in map:
-                return map[lang]
+                return map[lang].encode('utf-8')
 
         return default
 
@@ -327,7 +328,7 @@ class BaseLinter(object):
     def find_file(self, filename, view):
         '''Find a file with the given name, starting in the view's directory,
            then ascending the file hierarchy up to root.'''
-        path = view.file_name().encode('utf-8')
+        path = (view.file_name() or '').encode('utf-8')
 
         # quit if the view is temporary
         if not path:
@@ -374,7 +375,7 @@ class BaseLinter(object):
 
     def get_javascript_options(self, view):
         '''Subclasses should override this if they want to provide options
-           for a Javascript-based linter. If the subclass cannot provide
+           for a JavaScript-based linter. If the subclass cannot provide
            options, it should return None (or not return anything).'''
         return None
 
@@ -384,7 +385,7 @@ class BaseLinter(object):
                 if engine == 'node':
                     try:
                         path = self.get_mapped_executable(view, 'node')
-                        subprocess.call([path, '-v'], startupinfo=self.get_startupinfo())
+                        subprocess.call([path, u'-v'], startupinfo=self.get_startupinfo())
                         self.js_engine = {
                             'name': engine,
                             'path': path,
@@ -408,4 +409,4 @@ class BaseLinter(object):
 
         # Didn't find an engine, tell the user
         engine_list = ', '.join(self.JAVASCRIPT_ENGINE_NAMES.values())
-        return (False, '', 'One of the following Javascript engines must be installed: ' + engine_list)
+        return (False, '', 'One of the following JavaScript engines must be installed: ' + engine_list)

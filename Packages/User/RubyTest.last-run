@@ -1,4 +1,4 @@
 {
-	"last_test_run": "ruby -Itest test/integration/viewing_blogs_test.rb -n 'test_I_can_view_a_published_blog_post_on_the_home_page'",
-	"last_test_working_dir": "/Users/andrewwalker/Sites/madebymany-v2"
+	"last_test_run": "ruby -Itest test/unit/region_banner_test.rb",
+	"last_test_working_dir": "/Users/andrewwalker/Sites/clients/itv/nsw/trilby"
 }
