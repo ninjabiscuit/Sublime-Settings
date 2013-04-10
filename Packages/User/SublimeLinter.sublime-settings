@@ -1,6 +1,6 @@
 {
   // If true, when the file is saved any errors will appear in a popup list
-  "sublimelinter_popup_errors_on_save": true,
+  "sublimelinter_popup_errors_on_save": false,
 
   "javascript_linter" : "jshint",
 
@@ -13,5 +13,8 @@
       "Modernizr"
     ],
     "trailing": false
+  },
+  "sublimelinter_executable_map": {
+    "ruby": "~/.rvm/bin/rvm-auto-ruby"
   }
 }

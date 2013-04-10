@@ -1,5 +1,9 @@
 [
   { "keys": ["ctrl+shift+."], "command": "erb" },
+  { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
+
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
 
   { "keys": ["super+ctrl+m"], "command": "list_rails_models" },
   { "keys": ["super+ctrl+c"], "command": "list_rails_controllers" },

@@ -9,6 +9,7 @@
 		"CSS Snippets",
 		"EJS",
 		"ERB Insert and Toggle Commands",
+		"GitGutter",
 		"jQuery",
 		"Package Control",
 		"Rails Related Files",
@@ -21,6 +22,7 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"Theme - Soda",
-		"Tomorrow Color Schemes"
+		"Tomorrow Color Schemes",
+		"TrailingSpaces"
 	]
 }
